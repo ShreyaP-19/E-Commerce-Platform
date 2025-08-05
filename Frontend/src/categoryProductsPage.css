@@ -1,0 +1,37 @@
+#categoryName{
+    height: 100px;
+    margin-top: 30px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color: rgb(66, 63, 86);
+}
+#align-products{
+    /* height: 550px; */
+    margin-top: 30px;
+    margin-bottom: 60px;
+    background-color:white;
+    gap:40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#each-product {
+    height: 200px;
+    width:200px;
+    margin-top: 30px;
+  background-color: rgb(244, 244, 244);
+  padding: 20px;
+  text-align: center;
+}
+
+#photo {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}

@@ -1,0 +1,19 @@
+User:
+
+
+Products
+
+
+Orders
+
+
+Categories
+PUT /api/categories/:id → Edit category (admin) (no need)
+DELETE /api/categories/:id → Delete category (admin)
+
+Cart (if using server-side cart):
+DELETE /api/cart/:userId → Clear cart
+
+Reviews (if implemented):
+POST /api/products/:id/reviews → Add review
+GET /api/products/:id/reviews → Get product reviews

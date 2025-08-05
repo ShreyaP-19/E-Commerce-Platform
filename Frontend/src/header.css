@@ -1,0 +1,98 @@
+#navbar{
+    height:100px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+#logo{
+    height:35px;
+    width:45px;
+    border-radius: 50px;
+    /* background-color: antiquewhite; */
+    background-image: url('./assets/logo.png');
+    background-size: contain;
+    margin-left:60px;
+    transform: scale(4);
+}
+#searchbar{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    height:30px;
+
+}
+.searchdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.nav-search {
+    display: flex;
+    border: 2px solid #ccc;
+    width:530px;
+    height:40px;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: white;
+    transition: border-color 0.3s ease-in-out;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+  
+.search-input {
+    width: 460px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+  
+.search-button {
+    text-align: center;
+    background-color: #cce7ff;
+    border: none;
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+ }
+  
+#i {
+    font-size: 20px;
+    color: black;
+    padding-right:0;
+    margin:0;
+}
+.nav-search:hover {
+    border-color: #007bff; /* Blue border on hover */
+}
+#cart-icon,#shop-icon{
+    font-size: xx-large;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#seller-p{
+    font-weight: 700;
+    font-size:larger ;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#profile{
+    height: 80px;
+    width:80px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url('./assets/profile.jpg');
+    background-size: contain;
+}
+#profile:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

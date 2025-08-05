@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;  
+        box-sizing: border-box;
+      }
+
+      .orange-bg-stripe {
+        position: absolute;
+        background-color: #ff7a00;
+        /* background-color: #6366f1; */
+
+        height: 180px;
+        width: 120%;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+        border-radius: 20px;
+      }
+
+      .team-card {
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+        z-index: 1;
+        height: 310px;
+        justify-content: space-between;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .team-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #f0f0f0;
+        margin-bottom: 20px;
+      }
+
+      .team-name {
+        font-weight: 600;
+        font-size: 1.35rem;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .team-title {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      @media (max-width: 768px) {
+        .orange-bg-stripe {
+          height: 120px;
+        }
+        .team-card {
+          height: auto;
+          margin-bottom: 20px;
+        }
+        .team-image {
+          width: 120px;
+          height: 120px;
+        }
+        .team-name {
+          font-size: 1.2rem;
+        }
+        .team-title {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="relative w-full max-w-7xl mx-auto p-4 md:p-8">
+      <div class="relative z-10 flex flex-col items-center">
+        <!-- Faculty Advisor -->
+        <h1
+          class="text-4xl md:text-5xl font-bold text-white mb-12 text-center leading-tight"
+        >
+          FACULTY ADVISOR
+        </h1>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-8 w-full mb-16"
+        >
+          <div class="team-card">
+            <img
+              src="https://placehold.co/150x150/e0e0e0/333333?text=Advisor"
+              alt="Faculty Advisor"
+              class="team-image"
+            />
+            <div>
+              <p class="team-name">Dr. V V Kishor Kumar</p>
+              <p class="team-title">FACULTY ADVISOR</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Team -->
+        <div class="relative w-full mb-24">
+          <div class="orange-bg-stripe"></div>
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white mb-12 text-center relative z-10"
+          >
+            CORE TEAM
+          </h1>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full mb-8"
+          >
+            <!-- 4 Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=1"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ADITHYA P M</p>
+                <p class="team-title">CHAIRPERSON</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=2"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">YADUNAND NAMBIAR</p>
+                <p class="team-title">VICE CHAIRPERSON</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=3"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ISHAN MUNNA</p>
+                <p class="team-title">SECRETARY</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=4"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ARJUN GOPAL</p>
+                <p class="team-title">JOINT-SECRETARY</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 w-full mb-8"
+          >
+            <!-- 5 Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=5"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">GOPIKA PRABHAKARAN</p>
+                <p class="team-title">TREASURER</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=6"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">EBIN SEBY</p>
+                <p class="team-title">TECHNICAL CO-ORDINATOR</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=7"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">M S BHAVASRIJA</p>
+                <p class="team-title">EVENT CO-ORDINATOR</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=8"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">HARI NARAYANAN</p>
+                <p class="team-title">OPPORTUNITY CURATOR</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=9"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">AMALNATH N M</p>
+                <p class="team-title">PUBLICITY LEAD</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 w-full"
+          >
+            <!-- 5 More Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=10"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">AKSHAY R</p>
+                <p class="team-title">MEDIA LEAD</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=11"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">JEYAS C</p>
+                <p class="team-title">OUTREACH HEAD</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=12"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ZUHA USAMATH</p>
+                <p class="team-title">MDC</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=13"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ANURADH R N</p>
+                <p class="team-title">DESIGN LEAD</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=14"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">LAKSHMI KEERTHANA</p>
+                <p class="team-title">DESIGN CO-LEAD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- R&D Team -->
+        <div class="relative w-full mb-24">
+          <div class="orange-bg-stripe"></div>
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white mb-12 text-center relative z-10"
+          >
+            R&D TEAM
+          </h1>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 w-full mb-8"
+          >
+            <!-- 2 Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=A"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">MUHAMMAD RASHAD</p>
+                <p class="team-title">LEAD</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=B"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ASWIN MAHESH</p>
+                <p class="team-title">CO-LEAD</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full"
+          >
+            <!-- 4 Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=C"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">AMARNAND K C</p>
+                <p class="team-title">MEMBER</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=D"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ANASWARA ANISH K</p>
+                <p class="team-title">MEMBER</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=E"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">SOORYADATH P K</p>
+                <p class="team-title">MEMBER</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=F"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">RASITHA T R</p>
+                <p class="team-title">MEMBER</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Branch Coordinators -->
+        <div class="relative w-full mb-24">
+          <div class="orange-bg-stripe"></div>
+          <h1
+            class="text-4xl md:text-5xl font-bold text-white mb-12 text-center relative z-10"
+          >
+            BRANCH COORDINATORS
+          </h1>
+
+          <div
+            class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 w-full"
+          >
+            <!-- 5 Cards -->
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=BC1"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">VAISHNAV S VIJAYAN</p>
+                <p class="team-title">M E</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=BC2"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">SITHARA JAYACHANDRAN</p>
+                <p class="team-title">E E E</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=BC3"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">AJITH P</p>
+                <p class="team-title">C S E</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=BC4"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">VAIBHAV RAJ T</p>
+                <p class="team-title">E C E</p>
+              </div>
+            </div>
+            <div class="team-card">
+              <img
+                src="https://placehold.co/150x150/e0e0e0/333333?text=BC5"
+                class="team-image"
+              />
+              <div>
+                <p class="team-name">ABHINA E</p>
+                <p class="team-title">C E</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

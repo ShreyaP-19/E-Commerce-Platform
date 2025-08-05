@@ -1,0 +1,42 @@
+#label-div{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-top: 100px;
+}
+#label{
+    font-size: x-large;
+    color: rgb(94, 77, 94);
+}
+#input{
+    border:1px solid black;
+    width:200px;
+    border-radius: 7px;
+}
+#saveButton{
+    width:80px;
+    height: 30px;
+    background-color:rgb(180, 176, 180);
+    border:1px solid black;
+    color: white;
+    cursor:pointer;
+    border-radius: 5px;
+}
+#category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap:30px;
+    margin-bottom: 40px;
+}
+#categories{
+    width:180px;
+    height:100px;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 20px;
+}

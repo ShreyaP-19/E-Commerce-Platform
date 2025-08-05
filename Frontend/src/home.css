@@ -1,0 +1,75 @@
+*{
+    margin:0;
+}
+#flipImg{
+    position: fixed;
+}
+#signupbox{
+    position: fixed;
+    top: 120px;
+    left:105px;
+    width:400px;
+    height:400px;
+    background-color: white;
+    border:2px solid rgb(2, 158, 163);
+    text-align: center;
+}
+#signin{
+    margin-top: 50px;
+    font-size: xx-large;
+    font-family:'Copperplate';
+    margin-bottom: 30px;
+    color: rgb(2, 158, 163);
+}
+#signinform {
+    display: inline-block;
+    text-align: left;
+}
+#signindiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#signindiv-label {
+    width: 100px;
+    font-weight: bold;
+    color: rgb(11, 127, 131);;
+}
+#signindiv-input{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signindiv-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#signin-button {
+    padding: 6px 12px;
+    border: none;
+    background-color: rgb(2, 158, 163);;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#signin-button:hover {
+    opacity:0.8;
+    transform: scale(1.1);
+}
+#create-p{
+    margin-top: 20px;
+    color: rgb(7, 99, 102);;
+}
+#create-span{
+    color: blue;
+}
+#create-span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

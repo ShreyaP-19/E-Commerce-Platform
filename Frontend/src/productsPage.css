@@ -1,0 +1,41 @@
+#maindiv{
+    margin-top: 30px;
+    display: flex;
+    gap:40px;
+}
+#div1{
+    margin:20px;
+    background-color: rgb(244, 244, 244);
+    height:480px;
+    width:600px;
+}
+#div2{
+    margin:40px;
+    /* background-color: rgb(244, 244, 244);*/
+    height:350px; 
+    width:600px;
+}
+#image{
+    background-color: white;
+    margin:30px;
+    height:420px;
+    width:520px;
+}
+#product-name,#product-description{
+    color: rgb(66, 63, 86);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#product-description{
+    font-size: larger;
+}
+#buyButton{
+    height:50px;
+    width:160px;
+    margin:15px;
+    cursor: pointer;
+    background-color: rgb(114, 126, 149);
+    border:none;
+    border-radius: 10px;
+    color: aliceblue;
+}

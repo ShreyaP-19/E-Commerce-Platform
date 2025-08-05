@@ -1,0 +1,98 @@
+#acc{
+  display: flex;
+}
+#account-container{
+    /* display: flex; */
+    font-family: Arial, sans-serif;
+    margin-left: 100px;
+}
+#sidebar {
+  margin-top: 20px;
+  width: 250px;
+  padding: 20px;
+  background-color: #f5f6f9;
+}
+#user-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#avatar {
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+#section {
+    margin-top: 10px;
+}
+#section-title {
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 10px;
+}
+#section ul {
+  list-style: none;
+  margin-left: 30px;
+  padding-left: 0;
+}
+#section li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+#arrow{
+    margin-left: 70px;
+    font-size: larger;
+}
+#order{
+    margin-right: 10px;
+    font-size: larger;
+}
+#profile-info {
+  margin-top: 20px;
+  flex: 1;
+  margin-left: 100px;
+  padding-top: 0;
+  background-color: white;
+}
+
+#profile-info h2 {
+  margin-top: 20px;
+}
+
+#profile-info #edit {
+  color: blue;
+  font-size: 0.9em;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+#email-input {
+  display: block;
+  width: 110%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+}
+#edit-input-div{
+  display: flex;
+  gap:30px;
+}
+#radio{
+  margin-left: 20px;
+}
+#gender-div{
+  display: flex;
+  margin-top: 20px;
+  gap:50px;
+}
+#save{
+  margin-left: 200px;
+  margin-top: 10px;
+  height:30px;
+  width:55px;
+  cursor: pointer;
+}
